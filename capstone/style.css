@@ -99,12 +99,22 @@ p {
     font-family: 'Glyphicons Halflings';
     font-style: oblique;
 }
-li {
+div:nth-child(3) > ul {
+  font-size: large;
+  color: rgb(37, 136, 182);
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+div:nth-child(3) > ul > li:hover {
+  font-size: larger;
+}
+div:nth-child(4) > ul {
      font-size: x-large;
      color: turquoise;
      padding: 1%;
  }
-li:hover {
+div:nth-child(4) > ul > li:hover {
     background-color: rgb(54, 250, 224);
     border-radius: 5px;
     animation-name: example;
@@ -140,15 +150,14 @@ div.desc {
   }
   
 .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
+  display: inline-block;
+    padding: 5px;
+    width: 20%;
   }
   
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
     .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
+      width: 40%;
     }
   }
   
