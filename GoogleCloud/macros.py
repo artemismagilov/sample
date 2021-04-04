@@ -53,4 +53,4 @@ if os.path.exists(os.path.join(os.getcwd(), args.file_name)):
         f.write(strings)
     sys.stdout.write(strings)
 else:
-    print('Данного файла не существует. Файл должен быть в текущем папке')
+    print('Данного файла не существует. Файл должен быть в текущей папке')
